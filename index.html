@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=https://github.com/calcsupv/-fg-s-jv-j/raw/main/ananru.usdz">
-    <title>Opening USDZ...</title>
-    <script>
-        window.location.href = "https://github.com/calcsupv/-fg-s-jv-j/raw/main/ananru.usdz";
-    </script>
+  <title>Fake AR Launch</title>
 </head>
 <body>
-    <p>Opening USDZ file... If nothing happens, <a href="https://github.com/calcsupv/-fg-s-jv-j/raw/main/ananru.usdz">click here</a>.</p>
+  <a href="https://github.com/calcsupv/-fg-s-jv-j/raw/main/ananru.usdz" rel="ar" id="ar-link">
+    <img src="preview.jpg" alt="Launch AR" width="1" height="1" style="opacity:0;">
+  </a>
+
+  <script>
+    window.onload = () => {
+      document.getElementById("ar-link").click();
+    };
+  </script>
+
+  <p>Launching AR…</p>
 </body>
 </html>
